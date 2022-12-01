@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(244, 241, 244);
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headingContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  width: 500px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 100px;
+
+}
+
+#bookmarks {
+  height: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100px;
+  margin: auto;
+  margin-right: 30px;
+  background-color: rgb(194, 194, 194);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#bookmarks:hover {
+  background-color: rgb(125, 107, 107);
+}
+
+h2 {
+  color: rgb(53, 58, 59);
+}
+
+.searchContainer {
+  width: 500px;
+
+  display: flex;
+
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5px;
+}
+
+input {
+  width: 395px;
+  height: 20px;
+  border-radius: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid rgb(125, 107, 107);
+  ;
+}
+
+#search {
+  border-radius: 10px;
+  width: 60px;
+  margin-right: 30px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(55, 50, 51);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#search:hover {
+  background-color: rgb(100, 90, 92);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#linkbook {
+  color: white;
+  text-decoration: none;
+}
+
+.results {
+  width: 500px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5px;
+  box-sizing: content-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.bkm {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+}
+
+.imgcon {
+  height: auto;
+  width: 33%;
+}
+
+.imgcon .bkm {
+  visibility: hidden;
+}
+
+.imgcon:hover .bkm {
+  visibility: visible;
 }
