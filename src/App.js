@@ -10,7 +10,7 @@ function App() {
   const [bookmarks, setBookmarks] = useState([])
 
   const handleSubmit = () => {
-    axios.get(`https://pixabay.com/api/?key=31754115-82ea9f6a517e747ca70dedde8&q=${searchinput}&image_type=photo
+    axios.get(`https://pixabay.com/api/?key=apiKey&q=${searchinput}&image_type=photo
   `,).then(res => {
       setImages(res.data.hits)
     })
